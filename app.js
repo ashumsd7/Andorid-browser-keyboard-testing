@@ -26,6 +26,8 @@ new Vue({
             if(this.inputData1!="")
             {
               this.wrongpass1=true;
+              this.showReqPass1 = false;
+
             }
             else
             this.showReqPass1 = true;
@@ -34,6 +36,7 @@ new Vue({
             if(this.inputData2!="")
             {
               this.wrongpass2=true;
+              this.showReqPass2 = false;
             }
             else
             this.showReqPass2 = true;
