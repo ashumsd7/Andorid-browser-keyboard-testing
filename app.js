@@ -36,8 +36,9 @@ new Vue({
           handle2(){
             if(this.inputData2!="")
             {
-              this.showReqPass2 = false;
+             
               this.wrongpass2=true;
+              this.showReqPass2 = false;
             
             }
             else
