@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Android Keypad testing</title>
     <script src="https://npmcdn.com/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <style>
         *{
             background: black;
@@ -16,6 +17,9 @@
         strong{
             color: red;
         }
+        .form-control {
+            width: auto;
+    }
     </style>
 </head>
 <body> 
@@ -24,18 +28,18 @@
     <hr>
 
     <h3>Input Box 1</h3>
-   <input id="input1" v-model="inputData1"  @keypress="keyPressCheck($event)" type="text"> <small v-if="showReqPass1" >req1</small> <br>
+   <input  class="form-control" id="input1" v-model="inputData1"  @keypress="keyPressCheck($event)" type="text"> <small v-if="showReqPass1" >req1</small> <br>
    <strong v-if="wrongpass1">Wrong Pass1</strong>
    <br>
-   <button @click="handle1">Press1</button>
+   <button class="btn btn-success" @click="handle1">Press1</button>
    <br>
    <br>
    
    <h3>Input Box 2</h3>
-   <input id="input2" v-model="inputData2"   @keypress="keyPressCheck($event)"  type="text"> <small  v-if="showReqPass2">req2</small> <br>
+   <input  class="form-control" id="input2" v-model="inputData2"   @keypress="keyPressCheck($event)"  type="text"> <small  v-if="showReqPass2">req2</small> <br>
    <strong  v-if="wrongpass2">Wrong Pass2</strong>
    <br>
-   <button @click="handle2">Press2</button>
+   <button class="btn btn-success" @click="handle2">Press2</button>
        
 </div>
     <script src="app.js"></script>
