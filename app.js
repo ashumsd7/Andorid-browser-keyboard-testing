@@ -38,7 +38,7 @@ new Vue({
             {
              
               this.wrongpass2=true;
-              this.showReqPass2 = false;
+              // this.showReqPass2 = false;
             
             }
             else
